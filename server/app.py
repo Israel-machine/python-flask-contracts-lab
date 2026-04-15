@@ -14,7 +14,7 @@ app = Flask(__name__)
 def get_contract(id):
     for contract in contracts:
         if contract["id"] == id:
-            return f"<h1>{contract['contract_information']}</h1>", 200
+            return f'{contract['contract_information']}', 200
     return "<h2>Error: Contract Not Found</h2>", 404
 
 # /customer/<customer_name>
